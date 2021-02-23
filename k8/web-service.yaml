@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: c:\Users\vjpue\kompose.exe convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: web
+  name: web
+spec:
+  ports:
+  - name: "47800"
+    port: 47800
+    targetPort: 3000
+  selector:
+    io.kompose.service: web
+status:
+  loadBalancer: {}
