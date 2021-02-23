@@ -9,10 +9,12 @@ metadata:
     io.kompose.service: web
   name: web
 spec:
+  type: NodePort
   ports:
   - name: "47800"
     port: 47800
     targetPort: 3000
+    nodePort: 3000
   selector:
     io.kompose.service: web
 status:
