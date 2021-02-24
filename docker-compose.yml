@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-    -  "47800:3000"
+    -  "30000:3000"
     depends_on:
     - mongo
   mongo:
